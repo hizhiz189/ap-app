@@ -1,0 +1,36 @@
+# XAMPP
+/htdocs/
+
+# PHP
+/vendor/
+/node_modules/
+*.log
+*.cache
+.phpunit.result.cache
+composer.phar
+
+# IDE
+.idea/
+.vscode/
+*.swp
+*.swo
+*~
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Environment
+.env
+.env.local
+.env.*.local
+
+# Build outputs
+/public/build/
+/public/hot
+/public/storage
+
+# Cache
+/cache/
+/bootstrap/cache/*
+!/bootstrap/cache/.gitignore
