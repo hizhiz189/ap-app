@@ -26,6 +26,17 @@ class Router {
         $method = $_SERVER['REQUEST_METHOD'];
         $uri = parse_url($_SERVER['REQUEST_URI'], PHP_URL_PATH);
         
+        // Remove base path (/ap-app/public)
+        $basePath = '/ap-app/public';
+        if (strpos($uri, $basePath) === 0) {
+            $uri = substr($uri, strlen($basePath));
+        }
+        
+        // Handle root after base path
+        if ($uri === '') {
+            $uri = '/';
+        }
+        
         // Remove trailing slash (except for root)
         if ($uri !== '/') {
             $uri = rtrim($uri, '/');

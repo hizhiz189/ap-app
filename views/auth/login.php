@@ -29,7 +29,7 @@ if (isset($error)) {
 
 $content .= <<<HTML
         <!-- Login Form -->
-        <form class="mt-8 space-y-6" action="{$_ENV['APP_URL']}/login/process" method="POST">
+        <form class="mt-8 space-y-6" action="<?php echo APP_URL; ?>/login/process" method="POST">
             <div class="space-y-4">
                 <!-- Email -->
                 <div>

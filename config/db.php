@@ -11,7 +11,7 @@ define('DB_PASS', '');
 
 // App Config
 define('APP_NAME', 'AP App');
-define('APP_URL', 'http://localhost/ap-app');
+define('APP_URL', 'http://localhost:8080/ap-app/public');
 
 // Session config
 ini_set('session.cookie_httponly', 1);
