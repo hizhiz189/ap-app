@@ -63,7 +63,7 @@ class Router {
             $action = $controller[1];
             
             // Check if class file exists
-            $classFile = 'controllers/' . $class . '.php';
+            $classFile = __DIR__ . '/../controllers/' . $class . '.php';
             if (file_exists($classFile)) {
                 require_once $classFile;
                 $instance = new $class();

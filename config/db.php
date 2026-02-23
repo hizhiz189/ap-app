@@ -4,6 +4,10 @@
  * Copy file này thành config.php và điền thông tin DB của bạn
  */
 
+// Error reporting (chỉ dùng khi dev)
+error_reporting(E_ALL);
+ini_set('display_errors', 1);
+
 define('DB_HOST', 'localhost');
 define('DB_NAME', 'ap_app');
 define('DB_USER', 'root');
